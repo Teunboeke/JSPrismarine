@@ -100,6 +100,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_item_itemmanager_.itemmanager.html#getitem" class="tsd-kind-icon">get<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_item_itemmanager_.itemmanager.html#getitems" class="tsd-kind-icon">get<wbr>Items</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_item_itemmanager_.itemmanager.html#importitems" class="tsd-kind-icon">import<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_item_itemmanager_.itemmanager.html#onexit" class="tsd-kind-icon">on<wbr>Exit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_item_itemmanager_.itemmanager.html#onstart" class="tsd-kind-icon">on<wbr>Start</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_item_itemmanager_.itemmanager.html#registerclassitem" class="tsd-kind-icon">register<wbr>Class<wbr>Item</a></li>
 							</ul>
 						</section>
@@ -118,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L9">src/item/ItemManager.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L9">src/item/ItemManager.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -140,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L9">src/item/ItemManager.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L9">src/item/ItemManager.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -150,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="_src_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L8">src/item/ItemManager.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L8">src/item/ItemManager.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L16">src/item/ItemManager.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L30">src/item/ItemManager.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -190,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L19">src/item/ItemManager.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L33">src/item/ItemManager.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_src_item_index_.item.html" class="tsd-signature-type">Item</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -207,10 +209,54 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L29">src/item/ItemManager.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L43">src/item/ItemManager.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onexit" class="tsd-anchor"></a>
+					<h3>on<wbr>Exit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Exit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L26">src/item/ItemManager.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>onExit hook</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onstart" class="tsd-anchor"></a>
+					<h3>on<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L19">src/item/ItemManager.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>onStart hook</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -224,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/68504df/src/item/ItemManager.ts#L23">src/item/ItemManager.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0583481/src/item/ItemManager.ts#L37">src/item/ItemManager.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -274,6 +320,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_src_item_itemmanager_.itemmanager.html#importitems" class="tsd-kind-icon">import<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_item_itemmanager_.itemmanager.html#onexit" class="tsd-kind-icon">on<wbr>Exit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_item_itemmanager_.itemmanager.html#onstart" class="tsd-kind-icon">on<wbr>Start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_src_item_itemmanager_.itemmanager.html#registerclassitem" class="tsd-kind-icon">register<wbr>Class<wbr>Item</a>
