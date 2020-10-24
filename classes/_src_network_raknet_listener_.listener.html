@@ -95,25 +95,20 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#_connections" class="tsd-kind-icon">#connections</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#_id" class="tsd-kind-icon">#id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#_shutdown" class="tsd-kind-icon">#shutdown</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#_socket" class="tsd-kind-icon">#socket</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#connections" class="tsd-kind-icon">connections</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#server" class="tsd-kind-icon">server</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#connections" class="tsd-kind-icon">connections</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#socket" class="tsd-kind-icon">socket</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#shutdown" class="tsd-kind-icon">shutdown</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_network_raknet_listener_.listener.html#socket" class="tsd-kind-icon">socket</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#getconnections" class="tsd-kind-icon">get<wbr>Connections</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#getname" class="tsd-kind-icon">get<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#getsocket" class="tsd-kind-icon">get<wbr>Socket</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#handle" class="tsd-kind-icon">handle</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#handleopenconnectionrequest1" class="tsd-kind-icon">handle<wbr>Open<wbr>Connection<wbr>Request1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_network_raknet_listener_.listener.html#handleopenconnectionrequest2" class="tsd-kind-icon">handle<wbr>Open<wbr>Connection<wbr>Request2</a></li>
@@ -140,7 +135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L39">src/network/raknet/Listener.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L39">src/network/raknet/Listener.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -157,48 +152,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_connections" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #connections</h3>
-					<div class="tsd-signature tsd-kind-icon">#connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<a name="connections" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> connections</h3>
+					<div class="tsd-signature tsd-kind-icon">connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_src_network_raknet_connection_.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L37">src/network/raknet/Listener.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L37">src/network/raknet/Listener.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #id</h3>
-					<div class="tsd-signature tsd-kind-icon">#id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = Crypto.randomBytes(8).readBigInt64BE()</span></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = Crypto.randomBytes(8).readBigInt64BE()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L31">src/network/raknet/Listener.ts:31</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_shutdown" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #shutdown</h3>
-					<div class="tsd-signature tsd-kind-icon">#shutdown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L39">src/network/raknet/Listener.ts:39</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_socket" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #socket</h3>
-					<div class="tsd-signature tsd-kind-icon">#socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L35">src/network/raknet/Listener.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L31">src/network/raknet/Listener.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -210,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="_src_network_raknet_utils_servername_.servername.html" class="tsd-signature-type">ServerName</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L33">src/network/raknet/Listener.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L33">src/network/raknet/Listener.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,50 +193,54 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="_src_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L28">src/network/raknet/Listener.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L28">src/network/raknet/Listener.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="connections" class="tsd-anchor"></a>
-					<h3>connections</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> connections<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L233">src/network/raknet/Listener.ts:233</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="shutdown" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> shutdown</h3>
+					<div class="tsd-signature tsd-kind-icon">shutdown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L39">src/network/raknet/Listener.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="socket" class="tsd-anchor"></a>
-					<h3>socket</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L229">src/network/raknet/Listener.ts:229</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> socket</h3>
+					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L35">src/network/raknet/Listener.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getconnections" class="tsd-anchor"></a>
+					<h3>get<wbr>Connections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Connections<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_src_network_raknet_connection_.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L232">src/network/raknet/Listener.ts:232</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_src_network_raknet_connection_.connection.html" class="tsd-signature-type">Connection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getname" class="tsd-anchor"></a>
 					<h3>get<wbr>Name</h3>
@@ -276,10 +251,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L237">src/network/raknet/Listener.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L236">src/network/raknet/Listener.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_src_network_raknet_utils_servername_.servername.html" class="tsd-signature-type">ServerName</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getsocket" class="tsd-anchor"></a>
+					<h3>get<wbr>Socket</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L228">src/network/raknet/Listener.ts:228</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -293,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L72">src/network/raknet/Listener.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L72">src/network/raknet/Listener.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -319,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L137">src/network/raknet/Listener.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L137">src/network/raknet/Listener.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -342,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L168">src/network/raknet/Listener.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L168">src/network/raknet/Listener.ts:168</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,7 +360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L105">src/network/raknet/Listener.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L105">src/network/raknet/Listener.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -391,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L50">src/network/raknet/Listener.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L50">src/network/raknet/Listener.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -422,7 +414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L212">src/network/raknet/Listener.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L212">src/network/raknet/Listener.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -453,7 +445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L225">src/network/raknet/Listener.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L225">src/network/raknet/Listener.ts:225</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,7 +479,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L240">src/network/raknet/Listener.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L239">src/network/raknet/Listener.ts:239</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -510,7 +502,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/006e120/src/network/raknet/Listener.ts#L197">src/network/raknet/Listener.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0d7e70c/src/network/raknet/Listener.ts#L197">src/network/raknet/Listener.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -541,16 +533,10 @@
 								<a href="_src_network_raknet_listener_.listener.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_src_network_raknet_listener_.listener.html#_connections" class="tsd-kind-icon">#connections</a>
+								<a href="_src_network_raknet_listener_.listener.html#connections" class="tsd-kind-icon">connections</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_src_network_raknet_listener_.listener.html#_id" class="tsd-kind-icon">#id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_src_network_raknet_listener_.listener.html#_shutdown" class="tsd-kind-icon">#shutdown</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_src_network_raknet_listener_.listener.html#_socket" class="tsd-kind-icon">#socket</a>
+								<a href="_src_network_raknet_listener_.listener.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_src_network_raknet_listener_.listener.html#name" class="tsd-kind-icon">name</a>
@@ -558,14 +544,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_src_network_raknet_listener_.listener.html#server" class="tsd-kind-icon">server</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="_src_network_raknet_listener_.listener.html#connections" class="tsd-kind-icon">connections</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_src_network_raknet_listener_.listener.html#shutdown" class="tsd-kind-icon">shutdown</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_src_network_raknet_listener_.listener.html#socket" class="tsd-kind-icon">socket</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_network_raknet_listener_.listener.html#getconnections" class="tsd-kind-icon">get<wbr>Connections</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_src_network_raknet_listener_.listener.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_network_raknet_listener_.listener.html#getsocket" class="tsd-kind-icon">get<wbr>Socket</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_src_network_raknet_listener_.listener.html#handle" class="tsd-kind-icon">handle</a>
