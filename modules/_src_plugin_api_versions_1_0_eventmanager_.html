@@ -89,6 +89,13 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventmanager-1" class="tsd-kind-icon">Event<wbr>Manager</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_src_plugin_api_versions_1_0_eventmanager_.html#currentapitotargetapi" class="tsd-kind-icon">current<wbr>Api<wbr>ToTarget<wbr>Api</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_src_plugin_api_versions_1_0_eventmanager_.html#targetapitocurrentapi" class="tsd-kind-icon">target<wbr>Api<wbr>ToCurrent<wbr>Api</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -100,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">Event<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">InstanceType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="_src_network_handler_animate_handler_.html#eventmanager" class="tsd-signature-type">EventManager</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/19f3465/src/plugin/api/versions/1.0/EventManager.ts#L29">src/plugin/api/versions/1.0/EventManager.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L51">src/plugin/api/versions/1.0/EventManager.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -110,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">Event<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurrentVersionEventTypes</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/19f3465/src/plugin/api/versions/1.0/EventManager.ts#L5">src/plugin/api/versions/1.0/EventManager.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L9">src/plugin/api/versions/1.0/EventManager.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,12 +127,61 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="eventmanager-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Event<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">Event<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitterish</span><span class="tsd-signature-symbol"> &amp; </span><a href="../classes/_src_events_eventmanager_.eventmanagerwithouteventemitterishmethods.html" class="tsd-signature-type">EventManagerWithoutEventEmitterishMethods</a><span class="tsd-signature-symbol"> = EventEmitterishMixin(EventManagerWithoutEventEmitterishMethods,({ constructorArgs: [server] }) &#x3D;&gt; server.getEventManager().pipe((data): [EventTypes] | null &#x3D;&gt; {/*Here is where the transformation will have to be appliedwhen the future current version will be out of sync withAPI v1.0See: https://gist.github.com/garronej/84dddc6dad77d9fd0ce5608148bc59c4*/return [data];}))</span></div>
+					<div class="tsd-signature tsd-kind-icon">Event<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitterish</span><span class="tsd-signature-symbol"> &amp; </span><a href="../classes/_src_events_eventmanager_.eventmanagerwithouteventemitterishmethods.html" class="tsd-signature-type">EventManagerWithoutEventEmitterishMethods</a><span class="tsd-signature-symbol"> = EventEmitterishMixin(EventManagerWithoutEventEmitterishMethods,({ constructorArgs: [server] }) &#x3D;&gt; {const evtProxy &#x3D; new Evt&lt;EventTypes&gt;();const evtSrc &#x3D; server.getEventManager();const internalEvents &#x3D; new WeakSet&lt;EventTypes&gt;();evtSrc.$attach(currentApiToTargetApi,data &#x3D;&gt; (internalEvents.add(data),evtProxy.postAndWait(data)));evtProxy.$attachExtract(compose(data &#x3D;&gt; !internalEvents.has(data),targetApiToCurrentApi),data &#x3D;&gt; evtSrc.postAndWait(data));return evtProxy;})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/19f3465/src/plugin/api/versions/1.0/EventManager.ts#L13">src/plugin/api/versions/1.0/EventManager.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L23">src/plugin/api/versions/1.0/EventManager.ts:23</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="currentapitotargetapi" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> current<wbr>Api<wbr>ToTarget<wbr>Api</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">current<wbr>Api<wbr>ToTarget<wbr>Api<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a><span class="tsd-signature-symbol">]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L11">src/plugin/api/versions/1.0/EventManager.ts:11</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="targetapitocurrentapi" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> target<wbr>Api<wbr>ToCurrent<wbr>Api</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">target<wbr>Api<wbr>ToCurrent<wbr>Api<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a><span class="tsd-signature-symbol">]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L14">src/plugin/api/versions/1.0/EventManager.ts:14</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-signature-type">EventTypes</a><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -153,6 +209,12 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventmanager-1" class="tsd-kind-icon">Event<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#currentapitotargetapi" class="tsd-kind-icon">current<wbr>Api<wbr>ToTarget<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#targetapitocurrentapi" class="tsd-kind-icon">target<wbr>Api<wbr>ToCurrent<wbr>Api</a>
 					</li>
 				</ul>
 			</nav>
