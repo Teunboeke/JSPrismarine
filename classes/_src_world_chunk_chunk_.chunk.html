@@ -56,7 +56,7 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_src_world_chunk_chunk_.html">&quot;src/world/chunk/chunk&quot;</a>
+					<a href="../modules/_src_world_chunk_chunk_.html">&quot;src/world/chunk/Chunk&quot;</a>
 				</li>
 				<li>
 					<a href="_src_world_chunk_chunk_.chunk.html">Chunk</a>
@@ -137,13 +137,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Chunk<span class="tsd-signature-symbol">(</span>chunkX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, chunkZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, subChunks<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a><span class="tsd-signature-symbol">&gt;</span>, entities<span class="tsd-signature-symbol">?: </span><a href="../modules/_src_entity_entity_.html" class="tsd-signature-type">&quot;src/entity/entity&quot;</a><span class="tsd-signature-symbol">[]</span>, tiles<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">[]</span>, biomes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, heightMap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_world_chunk_chunk_.chunk.html" class="tsd-signature-type">Chunk</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Chunk<span class="tsd-signature-symbol">(</span>chunkX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, chunkZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, subChunks<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, entities<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span>, tiles<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span>, biomes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span>, heightMap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_world_chunk_chunk_.chunk.html" class="tsd-signature-type">Chunk</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L34">src/world/chunk/chunk.js:34</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L33">src/world/chunk/Chunk.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -160,19 +160,19 @@
 									<h5>chunkZ: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> subChunks: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> subChunks: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> entities: <a href="../modules/_src_entity_entity_.html" class="tsd-signature-type">&quot;src/entity/entity&quot;</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> entities: <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> tiles: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> tiles: <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> biomes: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> biomes: <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> heightMap: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> heightMap: <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 										</div>
@@ -189,10 +189,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_biomes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #biomes</h3>
-					<div class="tsd-signature tsd-kind-icon">#biomes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">#biomes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L28">src/world/chunk/chunk.js:28</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L27">src/world/chunk/Chunk.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,10 +201,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_entities" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #entities</h3>
-					<div class="tsd-signature tsd-kind-icon">#entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_src_entity_entity_.html" class="tsd-signature-type">&quot;src/entity/entity&quot;</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set()</span></div>
+					<div class="tsd-signature tsd-kind-icon">#entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = new Set()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L32">src/world/chunk/chunk.js:32</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L31">src/world/chunk/Chunk.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -216,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">#has<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L17">src/world/chunk/chunk.js:17</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L16">src/world/chunk/Chunk.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -228,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">#height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = MaxSubChunks</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L20">src/world/chunk/chunk.js:20</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L19">src/world/chunk/Chunk.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -237,20 +237,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_heightmap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #height<wbr>Map</h3>
-					<div class="tsd-signature tsd-kind-icon">#height<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">#height<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L34">src/world/chunk/chunk.js:34</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L33">src/world/chunk/Chunk.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_subchunks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #sub<wbr>Chunks</h3>
-					<div class="tsd-signature tsd-kind-icon">#sub<wbr>Chunks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<div class="tsd-signature tsd-kind-icon">#sub<wbr>Chunks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L25">src/world/chunk/chunk.js:25</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L24">src/world/chunk/Chunk.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,10 +259,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_x" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #x</h3>
-					<div class="tsd-signature tsd-kind-icon">#x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">#x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L12">src/world/chunk/chunk.js:12</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L11">src/world/chunk/Chunk.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,10 +271,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_z" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #z</h3>
-					<div class="tsd-signature tsd-kind-icon">#z<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">#z<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L14">src/world/chunk/chunk.js:14</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L13">src/world/chunk/Chunk.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -287,13 +287,13 @@
 					<a name="addentity" class="tsd-anchor"></a>
 					<h3>add<wbr>Entity</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Entity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="../modules/_src_entity_entity_.html" class="tsd-signature-type">&quot;src/entity/entity&quot;</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Entity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L186">src/world/chunk/chunk.js:186</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L188">src/world/chunk/Chunk.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,7 +304,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>entity: <a href="../modules/_src_entity_entity_.html" class="tsd-signature-type">&quot;src/entity/entity&quot;</a></h5>
+									<h5>entity: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -317,16 +317,16 @@
 					<a name="getbiomes" class="tsd-anchor"></a>
 					<h3>get<wbr>Biomes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Biomes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Biomes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L194">src/world/chunk/chunk.js:194</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L196">src/world/chunk/Chunk.ts:196</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -334,28 +334,28 @@
 					<a name="getblockid" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L95">src/world/chunk/chunk.js:95</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L94">src/world/chunk/Chunk.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>y: <span class="tsd-signature-type">any</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -363,28 +363,28 @@
 					<a name="getblockmetadata" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Metadata</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Metadata<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Metadata<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L98">src/world/chunk/chunk.js:98</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L97">src/world/chunk/Chunk.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>y: <span class="tsd-signature-type">any</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -392,16 +392,16 @@
 					<a name="getheightmap" class="tsd-anchor"></a>
 					<h3>get<wbr>Height<wbr>Map</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Height<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Height<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L190">src/world/chunk/chunk.js:190</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L192">src/world/chunk/Chunk.ts:192</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -409,22 +409,22 @@
 					<a name="gethighestblock" class="tsd-anchor"></a>
 					<h3>get<wbr>Highest<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Highest<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Highest<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L140">src/world/chunk/chunk.js:140</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L142">src/world/chunk/Chunk.ts:142</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -441,7 +441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L129">src/world/chunk/chunk.js:129</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L131">src/world/chunk/Chunk.ts:131</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -452,25 +452,25 @@
 					<a name="getsubchunk" class="tsd-anchor"></a>
 					<h3>get<wbr>Sub<wbr>Chunk</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sub<wbr>Chunk<span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, generateNew<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sub<wbr>Chunk<span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, generateNew<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L111">src/world/chunk/chunk.js:111</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L113">src/world/chunk/Chunk.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>y: <span class="tsd-signature-type">any</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> generateNew: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -484,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L156">src/world/chunk/chunk.js:156</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L158">src/world/chunk/Chunk.ts:158</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -495,16 +495,16 @@
 					<a name="getsubchunks" class="tsd-anchor"></a>
 					<h3>get<wbr>Sub<wbr>Chunks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sub<wbr>Chunks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sub<wbr>Chunks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L121">src/world/chunk/chunk.js:121</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L123">src/world/chunk/Chunk.ts:123</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="_src_world_chunk_sub_chunk_.subchunk.html" class="tsd-signature-type">SubChunk</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -518,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L70">src/world/chunk/chunk.js:70</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L69">src/world/chunk/Chunk.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -535,7 +535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L74">src/world/chunk/chunk.js:74</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L73">src/world/chunk/Chunk.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -552,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L173">src/world/chunk/chunk.js:173</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L175">src/world/chunk/Chunk.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -574,7 +574,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L160">src/world/chunk/chunk.js:160</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L162">src/world/chunk/Chunk.ts:162</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -585,22 +585,22 @@
 					<a name="setbiomeid" class="tsd-anchor"></a>
 					<h3>set<wbr>Biome<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Biome<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, biomeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Biome<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, biomeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L90">src/world/chunk/chunk.js:90</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L89">src/world/chunk/Chunk.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5>biomeId: <span class="tsd-signature-type">any</span></h5>
@@ -614,28 +614,28 @@
 					<a name="setblock" class="tsd-anchor"></a>
 					<h3>set<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, block<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, block<span class="tsd-signature-symbol">: </span><a href="_src_block_index_.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L106">src/world/chunk/chunk.js:106</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L105">src/world/chunk/Chunk.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>y: <span class="tsd-signature-type">any</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>block: <span class="tsd-signature-type">any</span></h5>
+									<h5>block: <a href="_src_block_index_.block.html" class="tsd-signature-type">Block</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -646,28 +646,28 @@
 					<a name="setblockid" class="tsd-anchor"></a>
 					<h3>set<wbr>Block<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<wbr>Id<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L101">src/world/chunk/chunk.js:101</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L100">src/world/chunk/Chunk.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>y: <span class="tsd-signature-type">any</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>id: <span class="tsd-signature-type">any</span></h5>
+									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -684,7 +684,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L177">src/world/chunk/chunk.js:177</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L179">src/world/chunk/Chunk.ts:179</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -701,25 +701,25 @@
 					<a name="setheightmap" class="tsd-anchor"></a>
 					<h3>set<wbr>Height<wbr>Map</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Height<wbr>Map<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Height<wbr>Map<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L125">src/world/chunk/chunk.js:125</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L127">src/world/chunk/Chunk.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -736,7 +736,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L198">src/world/chunk/chunk.js:198</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L200">src/world/chunk/Chunk.ts:200</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -747,22 +747,22 @@
 					<a name="getbiomeindex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Biome<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Biome<wbr>Index<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Biome<wbr>Index<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L82">src/world/chunk/chunk.js:82</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L81">src/world/chunk/Chunk.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -773,22 +773,22 @@
 					<a name="getheightmapindex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Height<wbr>Map<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Height<wbr>Map<wbr>Index<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Height<wbr>Map<wbr>Index<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L86">src/world/chunk/chunk.js:86</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L85">src/world/chunk/Chunk.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -799,25 +799,25 @@
 					<a name="getidindex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>IdIndex</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>IdIndex<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>IdIndex<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b3c493f/src/world/chunk/chunk.js#L78">src/world/chunk/chunk.js:78</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/8fe87b4/src/world/chunk/Chunk.ts#L77">src/world/chunk/Chunk.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>y: <span class="tsd-signature-type">any</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>z: <span class="tsd-signature-type">any</span></h5>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -833,7 +833,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_src_world_chunk_chunk_.html">&quot;src/world/chunk/chunk&quot;</a>
+						<a href="../modules/_src_world_chunk_chunk_.html">&quot;src/world/chunk/<wbr>Chunk&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -944,23 +944,14 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_src_world_chunk_chunk_.html#binarystream" class="tsd-kind-icon">Binary<wbr>Stream</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_src_world_chunk_chunk_.html#emptysubchunk" class="tsd-kind-icon">Empty<wbr>Sub<wbr>Chunk</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_src_world_chunk_chunk_.html#entity" class="tsd-kind-icon">Entity</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_src_world_chunk_chunk_.html#maxsubchunks" class="tsd-kind-icon">Max<wbr>Sub<wbr>Chunks</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_src_world_chunk_chunk_.html#player" class="tsd-kind-icon">Player</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/_src_world_chunk_chunk_.html#subchunk" class="tsd-kind-icon">Sub<wbr>Chunk</a>
 					</li>
 				</ul>
 			</nav>
