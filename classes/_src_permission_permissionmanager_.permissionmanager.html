@@ -90,6 +90,7 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_permission_permissionmanager_.permissionmanager.html#banned" class="tsd-kind-icon">banned</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_permission_permissionmanager_.permissionmanager.html#ops" class="tsd-kind-icon">ops</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_permission_permissionmanager_.permissionmanager.html#permissions" class="tsd-kind-icon">permissions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_src_permission_permissionmanager_.permissionmanager.html#server" class="tsd-kind-icon">server</a></li>
@@ -99,11 +100,15 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#can" class="tsd-kind-icon">can</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#isbanned" class="tsd-kind-icon">is<wbr>Banned</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#isop" class="tsd-kind-icon">is<wbr>Op</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#ondisable" class="tsd-kind-icon">on<wbr>Disable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#onenable" class="tsd-kind-icon">on<wbr>Enable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_src_permission_permissionmanager_.permissionmanager.html#parsebanned" class="tsd-kind-icon">parse<wbr>Banned</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_src_permission_permissionmanager_.permissionmanager.html#parseops" class="tsd-kind-icon">parse<wbr>Ops</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#setbanned" class="tsd-kind-icon">set<wbr>Banned</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#setop" class="tsd-kind-icon">set<wbr>Op</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_permission_permissionmanager_.permissionmanager.html#setunbanned" class="tsd-kind-icon">set<wbr>Unbanned</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L14">src/permission/PermissionManager.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L18">src/permission/PermissionManager.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -138,12 +143,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="banned" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> banned</h3>
+					<div class="tsd-signature tsd-kind-icon">banned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>reason<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L14">src/permission/PermissionManager.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ops" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ops</h3>
 					<div class="tsd-signature tsd-kind-icon">ops<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L13">src/permission/PermissionManager.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L13">src/permission/PermissionManager.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">permissions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L14">src/permission/PermissionManager.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L18">src/permission/PermissionManager.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="_src_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L12">src/permission/PermissionManager.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L12">src/permission/PermissionManager.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +195,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L71">src/permission/PermissionManager.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L139">src/permission/PermissionManager.ts:139</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -200,7 +215,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L73">src/permission/PermissionManager.ts:73</a></li>
+													<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L141">src/permission/PermissionManager.ts:141</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -218,6 +233,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isbanned" class="tsd-anchor"></a>
+					<h3>is<wbr>Banned</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Banned<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><a href="_src_player_player_.player.html" class="tsd-signature-type">Player</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L132">src/permission/PermissionManager.ts:132</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>player: <a href="_src_player_player_.player.html" class="tsd-signature-type">Player</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="isop" class="tsd-anchor"></a>
 					<h3>is<wbr>Op</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -227,7 +265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L67">src/permission/PermissionManager.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L128">src/permission/PermissionManager.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L24">src/permission/PermissionManager.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L29">src/permission/PermissionManager.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -267,7 +305,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L20">src/permission/PermissionManager.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L24">src/permission/PermissionManager.ts:24</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parsebanned" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Banned</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Banned<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L50">src/permission/PermissionManager.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -284,7 +339,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L29">src/permission/PermissionManager.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L34">src/permission/PermissionManager.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -292,16 +347,42 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setop" class="tsd-anchor"></a>
-					<h3>set<wbr>Op</h3>
+					<a name="setbanned" class="tsd-anchor"></a>
+					<h3>set<wbr>Banned</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Op<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><a href="_src_player_player_.player.html" class="tsd-signature-type">Player</a>, op<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Banned<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><a href="_src_player_player_.player.html" class="tsd-signature-type">Player</a>, reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/5dad83c/src/permission/PermissionManager.ts#L45">src/permission/PermissionManager.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L88">src/permission/PermissionManager.ts:88</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>player: <a href="_src_player_player_.player.html" class="tsd-signature-type">Player</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> reason: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setop" class="tsd-anchor"></a>
+					<h3>set<wbr>Op</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Op<span class="tsd-signature-symbol">(</span>player<span class="tsd-signature-symbol">: </span><a href="_src_player_player_.player.html" class="tsd-signature-type">Player</a>, op<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L66">src/permission/PermissionManager.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -313,7 +394,30 @@
 									<h5>op: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setunbanned" class="tsd-anchor"></a>
+					<h3>set<wbr>Unbanned</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Unbanned<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/d9bfd18/src/permission/PermissionManager.ts#L109">src/permission/PermissionManager.ts:109</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>username: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -341,6 +445,9 @@
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_src_permission_permissionmanager_.permissionmanager.html#banned" class="tsd-kind-icon">banned</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#ops" class="tsd-kind-icon">ops</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -353,6 +460,9 @@
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#can" class="tsd-kind-icon">can</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_permission_permissionmanager_.permissionmanager.html#isbanned" class="tsd-kind-icon">is<wbr>Banned</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#isop" class="tsd-kind-icon">is<wbr>Op</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -362,10 +472,19 @@
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#onenable" class="tsd-kind-icon">on<wbr>Enable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_src_permission_permissionmanager_.permissionmanager.html#parsebanned" class="tsd-kind-icon">parse<wbr>Banned</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#parseops" class="tsd-kind-icon">parse<wbr>Ops</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_permission_permissionmanager_.permissionmanager.html#setbanned" class="tsd-kind-icon">set<wbr>Banned</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_src_permission_permissionmanager_.permissionmanager.html#setop" class="tsd-kind-icon">set<wbr>Op</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_src_permission_permissionmanager_.permissionmanager.html#setunbanned" class="tsd-kind-icon">set<wbr>Unbanned</a>
 							</li>
 						</ul>
 					</li>
