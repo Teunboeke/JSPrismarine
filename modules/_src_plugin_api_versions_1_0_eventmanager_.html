@@ -70,23 +70,17 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module tsd-is-not-exported"><a href="../classes/_src_plugin_api_versions_1_0_eventmanager_.eventmanagerwithouteventemitterishmethods.html" class="tsd-kind-icon">Event<wbr>Manager<wbr>Without<wbr>Event<wbr>Emitterish<wbr>Methods</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/_src_plugin_api_versions_1_0_eventmanager_.eventmanager.html" class="tsd-kind-icon">Event<wbr>Manager</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../classes/_src_plugin_api_versions_1_0_eventmanager_.eventmanagerwithouteventemitterishmethods.html" class="tsd-kind-icon">Event<wbr>Manager<wbr>Without<wbr>Event<wbr>Emitterish<wbr>Methods</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventmanager" class="tsd-kind-icon">Event<wbr>Manager</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-kind-icon">Event<wbr>Types</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventmanager-1" class="tsd-kind-icon">Event<wbr>Manager</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -102,35 +96,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-					<a name="eventmanager" class="tsd-anchor"></a>
-					<h3>Event<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">Event<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">InstanceType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="_src_network_handler_animate_handler_.html#eventmanager" class="tsd-signature-type">EventManager</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L51">src/plugin/api/versions/1.0/EventManager.ts:51</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 					<a name="eventtypes" class="tsd-anchor"></a>
 					<h3>Event<wbr>Types</h3>
 					<div class="tsd-signature tsd-kind-icon">Event<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurrentVersionEventTypes</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L9">src/plugin/api/versions/1.0/EventManager.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="eventmanager-1" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Event<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">Event<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitterish</span><span class="tsd-signature-symbol"> &amp; </span><a href="../classes/_src_events_eventmanager_.eventmanagerwithouteventemitterishmethods.html" class="tsd-signature-type">EventManagerWithoutEventEmitterishMethods</a><span class="tsd-signature-symbol"> = EventEmitterishMixin(EventManagerWithoutEventEmitterishMethods,({ constructorArgs: [server] }) &#x3D;&gt; {const evtProxy &#x3D; new Evt&lt;EventTypes&gt;();const evtSrc &#x3D; server.getEventManager();const internalEvents &#x3D; new WeakSet&lt;EventTypes&gt;();evtSrc.$attach(currentApiToTargetApi,data &#x3D;&gt; (internalEvents.add(data),evtProxy.postAndWait(data)));evtProxy.$attachExtract(compose(data &#x3D;&gt; !internalEvents.has(data),targetApiToCurrentApi),data &#x3D;&gt; evtSrc.postAndWait(data));return evtProxy;})</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L23">src/plugin/api/versions/1.0/EventManager.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3526241/src/plugin/api/versions/1.0/EventManager.ts#L10">src/plugin/api/versions/1.0/EventManager.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -147,7 +118,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L11">src/plugin/api/versions/1.0/EventManager.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3526241/src/plugin/api/versions/1.0/EventManager.ts#L12">src/plugin/api/versions/1.0/EventManager.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -170,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/dd22f14/src/plugin/api/versions/1.0/EventManager.ts#L14">src/plugin/api/versions/1.0/EventManager.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/3526241/src/plugin/api/versions/1.0/EventManager.ts#L15">src/plugin/api/versions/1.0/EventManager.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -198,17 +169,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/_src_plugin_api_versions_1_0_eventmanager_.eventmanager.html" class="tsd-kind-icon">Event<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../classes/_src_plugin_api_versions_1_0_eventmanager_.eventmanagerwithouteventemitterishmethods.html" class="tsd-kind-icon">Event<wbr>Manager<wbr>Without<wbr>Event<wbr>Emitterish<wbr>Methods</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventmanager" class="tsd-kind-icon">Event<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventtypes" class="tsd-kind-icon">Event<wbr>Types</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#eventmanager-1" class="tsd-kind-icon">Event<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_src_plugin_api_versions_1_0_eventmanager_.html#currentapitotargetapi" class="tsd-kind-icon">current<wbr>Api<wbr>ToTarget<wbr>Api</a>
@@ -233,13 +201,15 @@
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>
