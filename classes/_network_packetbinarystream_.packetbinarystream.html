@@ -89,10 +89,10 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_network_packetbinarystream_.packetbinarystream.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="_network_packetbinarystream_.packetbinarystream.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
@@ -180,26 +180,29 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Packet<wbr>Binary<wbr>Stream<span class="tsd-signature-symbol">(</span>server<span class="tsd-signature-symbol">?: </span><a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_network_packetbinarystream_.packetbinarystream.html" class="tsd-signature-type">PacketBinaryStream</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Packet<wbr>Binary<wbr>Stream<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Buffer</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_network_packetbinarystream_.packetbinarystream.html" class="tsd-signature-type">PacketBinaryStream</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides BinaryStream.__constructor</p>
+								<p>Inherited from <a href="_network_packetbinarystream_.packetbinarystream.html">PacketBinaryStream</a>.<a href="_network_packetbinarystream_.packetbinarystream.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L33">src/network/PacketBinaryStream.ts:33</a></li>
+									<li>Defined in node_modules/@jsprismarine/jsbinaryutils/dist/BinaryStream.d.ts:4</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> server: <a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> buffer: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> offset: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_network_packetbinarystream_.packetbinarystream.html" class="tsd-signature-type">PacketBinaryStream</a></h4>
@@ -212,10 +215,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_server" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> #server</h3>
-					<div class="tsd-signature tsd-kind-icon">#server<span class="tsd-signature-symbol">:</span> <a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></div>
+					<div class="tsd-signature tsd-kind-icon">#server<span class="tsd-signature-symbol">:</span> <a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a><span class="tsd-signature-symbol"> = Prismarine?.instance as Prismarine</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L33">src/network/PacketBinaryStream.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L33">src/network/PacketBinaryStream.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -357,7 +360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L40">src/network/PacketBinaryStream.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L35">src/network/PacketBinaryStream.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_prismarine_.prismarine.html" class="tsd-signature-type">Prismarine</a></h4>
@@ -374,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L294">src/network/PacketBinaryStream.ts:294</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L289">src/network/PacketBinaryStream.ts:289</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -397,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L291">src/network/PacketBinaryStream.ts:291</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L286">src/network/PacketBinaryStream.ts:286</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -515,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L520">src/network/PacketBinaryStream.ts:520</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L518">src/network/PacketBinaryStream.ts:518</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -595,18 +598,24 @@
 					<a name="readitemstack" class="tsd-anchor"></a>
 					<h3>read<wbr>Item<wbr>Stack</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Item<wbr>Stack<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="_block_index_.block.html" class="tsd-signature-type">Block</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Item<wbr>Stack<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L328">src/network/PacketBinaryStream.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L320">src/network/PacketBinaryStream.ts:320</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="_block_index_.block.html" class="tsd-signature-type">Block</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -620,7 +629,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L411">src/network/PacketBinaryStream.ts:411</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L409">src/network/PacketBinaryStream.ts:409</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -637,7 +646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L433">src/network/PacketBinaryStream.ts:433</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L431">src/network/PacketBinaryStream.ts:431</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -654,7 +663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L512">src/network/PacketBinaryStream.ts:512</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L510">src/network/PacketBinaryStream.ts:510</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>containerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>stackNetworkId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -958,7 +967,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L84">src/network/PacketBinaryStream.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L79">src/network/PacketBinaryStream.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -980,7 +989,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L47">src/network/PacketBinaryStream.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L42">src/network/PacketBinaryStream.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1025,7 +1034,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L62">src/network/PacketBinaryStream.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L57">src/network/PacketBinaryStream.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,7 +1168,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L249">src/network/PacketBinaryStream.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L244">src/network/PacketBinaryStream.ts:244</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1244,7 +1253,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L259">src/network/PacketBinaryStream.ts:259</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L254">src/network/PacketBinaryStream.ts:254</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1298,7 +1307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L298">src/network/PacketBinaryStream.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L293">src/network/PacketBinaryStream.ts:293</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1352,7 +1361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L267">src/network/PacketBinaryStream.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L262">src/network/PacketBinaryStream.ts:262</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1411,7 +1420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L383">src/network/PacketBinaryStream.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L381">src/network/PacketBinaryStream.ts:381</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1441,7 +1450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L426">src/network/PacketBinaryStream.ts:426</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L424">src/network/PacketBinaryStream.ts:424</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1675,7 +1684,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L230">src/network/PacketBinaryStream.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L225">src/network/PacketBinaryStream.ts:225</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1703,7 +1712,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L245">src/network/PacketBinaryStream.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L240">src/network/PacketBinaryStream.ts:240</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1762,7 +1771,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L165">src/network/PacketBinaryStream.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L160">src/network/PacketBinaryStream.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1790,7 +1799,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L221">src/network/PacketBinaryStream.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L216">src/network/PacketBinaryStream.ts:216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1818,7 +1827,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L54">src/network/PacketBinaryStream.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L49">src/network/PacketBinaryStream.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1877,7 +1886,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/b9a439e/src/network/PacketBinaryStream.ts#L74">src/network/PacketBinaryStream.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/2cf11bc/src/network/PacketBinaryStream.ts#L69">src/network/PacketBinaryStream.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2039,7 +2048,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_network_packetbinarystream_.packetbinarystream.html" class="tsd-kind-icon">Packet<wbr>Binary<wbr>Stream</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_network_packetbinarystream_.packetbinarystream.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -2339,7 +2348,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
@@ -2347,14 +2355,15 @@
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 		</div>
 	</div>
