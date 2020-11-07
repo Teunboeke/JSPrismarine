@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MovementType | @jsprismarine/prismarine</title>
+	<title>InventoryTransactionType | @jsprismarine/prismarine</title>
 	<meta name="description" content="Documentation for @jsprismarine/prismarine">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_network_type_movementtype_.html">&quot;network/type/MovementType&quot;</a>
+					<a href="../modules/_network_packet_inventorytransactionpacket_.html">&quot;network/packet/InventoryTransactionPacket&quot;</a>
 				</li>
 				<li>
-					<a href="_network_type_movementtype_.movementtype.html">MovementType</a>
+					<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html">InventoryTransactionType</a>
 				</li>
 			</ul>
-			<h1>Enumeration MovementType</h1>
+			<h1>Enumeration InventoryTransactionType</h1>
 		</div>
 	</div>
 </header>
@@ -74,10 +74,11 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_type_movementtype_.movementtype.html#normal" class="tsd-kind-icon">Normal</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_type_movementtype_.movementtype.html#pitch" class="tsd-kind-icon">Pitch</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_type_movementtype_.movementtype.html#reset" class="tsd-kind-icon">Reset</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_type_movementtype_.movementtype.html#teleport" class="tsd-kind-icon">Teleport</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#mismatch" class="tsd-kind-icon">Mismatch</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#normal" class="tsd-kind-icon">Normal</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#releaseitem" class="tsd-kind-icon">Release<wbr>Item</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#useitem" class="tsd-kind-icon">Use<wbr>Item</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#useitemonentity" class="tsd-kind-icon">Use<wbr>Item<wbr>OnEntity</a></li>
 							</ul>
 						</section>
 					</div>
@@ -86,42 +87,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="mismatch" class="tsd-anchor"></a>
+					<h3>Mismatch</h3>
+					<div class="tsd-signature tsd-kind-icon">Mismatch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/packet/InventoryTransactionPacket.ts#L15">src/network/packet/InventoryTransactionPacket.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="normal" class="tsd-anchor"></a>
 					<h3>Normal</h3>
 					<div class="tsd-signature tsd-kind-icon">Normal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/type/MovementType.ts#L2">src/network/type/MovementType.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/packet/InventoryTransactionPacket.ts#L14">src/network/packet/InventoryTransactionPacket.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="pitch" class="tsd-anchor"></a>
-					<h3>Pitch</h3>
-					<div class="tsd-signature tsd-kind-icon">Pitch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
+					<a name="releaseitem" class="tsd-anchor"></a>
+					<h3>Release<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">Release<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/type/MovementType.ts#L5">src/network/type/MovementType.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/packet/InventoryTransactionPacket.ts#L18">src/network/packet/InventoryTransactionPacket.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="reset" class="tsd-anchor"></a>
-					<h3>Reset</h3>
-					<div class="tsd-signature tsd-kind-icon">Reset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<a name="useitem" class="tsd-anchor"></a>
+					<h3>Use<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">Use<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/type/MovementType.ts#L3">src/network/type/MovementType.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/packet/InventoryTransactionPacket.ts#L16">src/network/packet/InventoryTransactionPacket.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="teleport" class="tsd-anchor"></a>
-					<h3>Teleport</h3>
-					<div class="tsd-signature tsd-kind-icon">Teleport<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<a name="useitemonentity" class="tsd-anchor"></a>
+					<h3>Use<wbr>Item<wbr>OnEntity</h3>
+					<div class="tsd-signature tsd-kind-icon">Use<wbr>Item<wbr>OnEntity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/type/MovementType.ts#L4">src/network/type/MovementType.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/JSPrismarine/JSPrismarine/blob/0ef9dbc/src/network/packet/InventoryTransactionPacket.ts#L17">src/network/packet/InventoryTransactionPacket.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -134,33 +145,48 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_network_type_movementtype_.html">&quot;network/type/<wbr>Movement<wbr>Type&quot;</a>
+						<a href="../modules/_network_packet_inventorytransactionpacket_.html">&quot;network/packet/<wbr>Inventory<wbr>Transaction<wbr>Packet&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="_network_packet_inventorytransactionpacket_.inventorytransactionactiontype.html" class="tsd-kind-icon">Inventory<wbr>Transaction<wbr>Action<wbr>Type</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="_network_type_movementtype_.movementtype.html" class="tsd-kind-icon">Movement<wbr>Type</a>
+						<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html" class="tsd-kind-icon">Inventory<wbr>Transaction<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_network_type_movementtype_.movementtype.html#normal" class="tsd-kind-icon">Normal</a>
+								<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#mismatch" class="tsd-kind-icon">Mismatch</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_network_type_movementtype_.movementtype.html#pitch" class="tsd-kind-icon">Pitch</a>
+								<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#normal" class="tsd-kind-icon">Normal</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_network_type_movementtype_.movementtype.html#reset" class="tsd-kind-icon">Reset</a>
+								<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#releaseitem" class="tsd-kind-icon">Release<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_network_type_movementtype_.movementtype.html#teleport" class="tsd-kind-icon">Teleport</a>
+								<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#useitem" class="tsd-kind-icon">Use<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_network_packet_inventorytransactionpacket_.inventorytransactiontype.html#useitemonentity" class="tsd-kind-icon">Use<wbr>Item<wbr>OnEntity</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_network_packet_inventorytransactionpacket_.inventorytransactionpacket.html" class="tsd-kind-icon">Inventory<wbr>Transaction<wbr>Packet</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_network_packet_inventorytransactionpacket_.html#changeslot" class="tsd-kind-icon">Change<wbr>Slot</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_network_packet_inventorytransactionpacket_.html#networktransaction" class="tsd-kind-icon">Network<wbr>Transaction</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
